@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Assignment 5\nsample <- rexp(100,1)\nv <- seq(0.01,1,0.01)\nqqplot(qexp(v),sample)\n\n",
+    "created" : 1489058341537.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1253345064",
+    "id" : "A8EC216D",
+    "lastKnownWriteTime" : 1489058530,
+    "last_content_update" : 1489058530510,
+    "path" : "~/Documents/StatisticalDataAnalysis/github_sda/Assignment5/test_exercise.R",
+    "project_path" : "test_exercise.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
