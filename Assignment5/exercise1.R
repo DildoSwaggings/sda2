@@ -16,7 +16,7 @@ qqexp(SDRP)
 n <- length(SDRP)
 T_n = mean(SDRP)
 bootstrap_SDRP <- bootstrap(SDRP,mean,1000)
-
+hist(bootstrap_SDRP,main="Hist. of emp. bootstrap of mean SDRP",xlab="Estimate for mean SDPR")
 #MET HULP WERKCOLLEGE DOCENT:
 2 * T_n - quantile(bootstrap_SDRP,c(0.975,0.025))
 #upper_boundary <- 2 * T_n - quantile(bootstrap_SDRP,0.025)
@@ -24,6 +24,7 @@ bootstrap_SDRP <- bootstrap(SDRP,mean,1000)
 #B
 T_n = median(SDRP)
 bootstrap_SDRP <- bootstrap(SDRP,median,1000)
+hist(bootstrap_SDRP,main="Hist. of emp. bootstrap of median SDRP",xlab="Estimate for median SDPR")
 2 * T_n - quantile(bootstrap_SDRP,c(0.975,0.025))
 #
 #D
