@@ -31,5 +31,5 @@ T_n <- median(SDRP) - median(CTRP)
 bootstrap_SDPR <- bootstrap(SDRP,median,1000)
 bootstrap_CTRP <- bootstrap(CTRP,median,1000)
 z_star <- median(bootstrap_SDPR) - median(CTRP) - T_n
-z_star
-
+z_star <- bootstrap_SDPR - bootstrap_CTRP 
+2 * T_n - quantile(z_star,c(0.975,0.025))
